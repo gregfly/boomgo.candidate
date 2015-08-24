@@ -1,0 +1,73 @@
+a {
+    text-decoration: none;
+}
+
+iframe {
+    width: 100%;
+    min-height: 200px;
+}
+
+iframe:last-child {
+    min-height: 500px;
+}
+
+form .row {
+    margin: 5px 0;
+}
+
+form .row .errors {
+    margin: 0;
+}
+
+form .row label {
+    display: inline-block;
+    min-width: 50px;
+    font-weight: bold;
+}
+
+form .row input {
+    display: inline-block;
+    min-width: 150px;
+}
+
+form input[type=submit] {
+    cursor: pointer;
+}
+
+.group-switch a {
+    display: inline-block;
+    padding: 7px 14px;
+}
+
+.group-switch a.active {
+    background: #007020;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid grey;
+}
+
+table tr > td, table tr th {
+    padding: 3px;
+    text-align: center;
+}
+
+.pagination {
+    margin: 10px 0;
+}
+
+.pagination a {
+    display: inline-block;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    min-width: 45px;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.pagination a:hover {
+    background: lightgoldenrodyellow;
+}
