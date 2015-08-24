@@ -47,6 +47,9 @@ class GameResult extends Model
             if (!is_string($this->name) || !strlen($this->name)) {
                 $this->addError('name', 'Необходимо ввести имя игрока');
             }
+            if (strlen($this->name) > 20) {
+                $this->addError('name', 'Имя игрока не может быть больше 20 символов');
+            }
         }
         if (in_array('score', $attributeNames)) {
             if (!strlen($this->score)) {
