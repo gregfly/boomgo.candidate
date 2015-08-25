@@ -9,4 +9,7 @@ https://github.com/gregfly/boomgo.candidate
 1. БД (Дамп находится в "db/dump.sql").
 2. Сконфигурировать сервер таким образом,
 чтобы все запросы, если url не указывает на файл, перенаправлялись на "web/index.php".
-3. Перейти на http://{url}/home/.
+3. Настройка соединения с БД:
+В \app\base\Application::getDb(); исправить создание \PDO;
+(по умолчанию, хост: localhost, бд: app, пользователь: user, пароль: user).
+4. Перейти на http://{url}/home/.
